@@ -1,0 +1,71 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  rollNo: MyString
+  name: MyString
+  gender: MyString
+  category: MyString
+  branch: MyString
+  dob: 2014-06-12 20:18:34
+  email: MyString
+  contactNo: MyString
+  altContactNo: MyString
+  bePercent: 9.99
+  bePercentDrop: MyString
+  decimal: MyString
+  sem1Percent: 9.99
+  sem2Percent: 9.99
+  sem3Percent: 9.99
+  sem4Percent: 9.99
+  sem5Percent: 9.99
+  sem6Percent: 9.99
+  xPercent: 9.99
+  xYear: 1
+  xiiPercent: 9.99
+  xiiYear: 1
+  xBoard: MyString
+  xiiBoard: MyString
+  fathersName: MyString
+  fathersOccupation: MyString
+  fathersContact: MyString
+  mothersName: MyString
+  mothersOccupation: MyString
+  mothersContact: MyString
+  backs: 1
+  currentAddress: MyString
+  permanentAddress: MyString
+
+two:
+  rollNo: MyString
+  name: MyString
+  gender: MyString
+  category: MyString
+  branch: MyString
+  dob: 2014-06-12 20:18:34
+  email: MyString
+  contactNo: MyString
+  altContactNo: MyString
+  bePercent: 9.99
+  bePercentDrop: MyString
+  decimal: MyString
+  sem1Percent: 9.99
+  sem2Percent: 9.99
+  sem3Percent: 9.99
+  sem4Percent: 9.99
+  sem5Percent: 9.99
+  sem6Percent: 9.99
+  xPercent: 9.99
+  xYear: 1
+  xiiPercent: 9.99
+  xiiYear: 1
+  xBoard: MyString
+  xiiBoard: MyString
+  fathersName: MyString
+  fathersOccupation: MyString
+  fathersContact: MyString
+  mothersName: MyString
+  mothersOccupation: MyString
+  mothersContact: MyString
+  backs: 1
+  currentAddress: MyString
+  permanentAddress: MyString

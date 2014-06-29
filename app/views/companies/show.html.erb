@@ -1,0 +1,44 @@
+<h1> Company Details </h1>
+
+<p>
+  <strong>Name:</strong>
+  <%= @company.name %>
+</p>
+<p>
+  <strong>Grade:</strong>
+  <%= @company.grade %>
+</p>
+ 
+<p>
+  <strong>BE Cutoff:</strong>
+  <%= @company.beCutoff %>
+</p>
+<p>
+  <strong>Branches Allowed:</strong>
+  <%= @company.branchesAllowed %>
+</p>
+<p>
+  <strong>Backs Allowed:</strong>
+  <%= @company.backsAllowed %>
+</p>
+<p>
+  <strong>Details:</strong>
+  <%= @company.details %>
+</p>
+<p>
+  <strong>Package:</strong>
+  <%= @company.package %>
+</p>
+<p>
+  <strong>XII Cuttoff:</strong>
+  <%= @company.xiiCutoff %>
+</p>
+<p>
+  <strong>Class X Cuttoff:</strong>
+  <%= @company.xCutoff %>
+</p>
+<p>
+  <strong>Deadline:</strong>
+  <%= @company.deadline %>
+</p>
+<%= link_to 'Back', companies_path %> | <%= link_to 'Edit', edit_company_path(@company) %>

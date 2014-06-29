@@ -1,0 +1,92 @@
+<%= form_for @company do |f| %>
+  <% if @company.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@company.errors.count, "error") %> prohibited
+      this company from being saved:</h2>
+    <ul>
+    <% @company.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+  <% end %>
+ 
+
+  <p>
+
+    <div class="row">
+        <div class='col-sm-6'>
+            <div class="form-group">
+               <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name,class:'form-control' %>
+  </p>
+<p>
+    <%= f.label :grade %><br>
+    
+    <%= f.select(:grade, options_for_select([['Dream', 'dream'], ['A++', 'a++'], ['A+', 'a+'],['A', 'a']])) %>
+  </p>
+
+  <p>
+    <%= f.label :beCutoff %><br>
+    <%= f.text_field :beCutoff,class:'form-control' %>
+    
+
+    </p>
+    <%= f.label :branchesAllowed %><br>
+ <%= f.check_box :coe, {}, "COE", "" %><%= label_tag :COE %><br>
+
+  <%= f.check_box :ece,  {}, "ECE", ""%><%= label_tag :ECE %><br>
+  <%= f.check_box  :ice, {}, "ICE", ""%><%= label_tag :ICE %><br>
+  <%= f.check_box  :it,  {}, "IT", ""%><%= label_tag :IT %><br>
+  <%= f.check_box :mpae, {}, "MPAE", ""%><%= label_tag :MPAE %><br>
+  <%= f.check_box  :bt, {}, "BT", ""%><%= label_tag :BT %><br>
+  <%= f.check_box  :is, {}, "IS", ""%><%= label_tag :IS %><br>
+  <%= f.check_box  :sp,  {}, "SP", ""%><%= label_tag :SP %><br>
+  <%= f.check_box  :pc,  {}, "PC", ""%><%= label_tag :PC %><br>
+    <p>
+    <%= f.label :backsAllowed %><br>
+    <%= f.text_field :backsAllowed,class:'form-control' %>
+  </p>
+<p>
+    <%= f.label :details %><br>
+    <%= f.text_field :details,class:'form-control' %>
+  </p>
+  <p>
+    <%= f.label :package %><br>
+    <%= f.text_field :package,class:'form-control' %>
+  </p>
+   <p>
+    <%= f.label :xiiCutoff %><br>
+    <%= f.text_field :xiiCutoff,class:'form-control' %>
+  </p>
+    <p>
+    <%= f.label :xCutoff %><br>
+    <%= f.text_field :xCutoff,class:'form-control' %>
+  </p>
+  <%= f.label :deadline %><br>
+          
+                <div class='input-group date' id='datetimepicker1'>
+
+                    <%= f.text_field :deadline ,class:'form-control',:readonly=>true%>
+                    <span class="input-group-addon" ><span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker({format: 'YYYY-MM-DD HH:mm:ss '});
+            });
+            
+        </script>
+
+    </div>
+
+  <p>
+    <%= f.submit %>
+  </p>
+
+  
+   
+<% end %>

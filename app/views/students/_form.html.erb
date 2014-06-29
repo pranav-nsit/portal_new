@@ -1,0 +1,146 @@
+<%= form_for @student do |f| %>
+  <% if @student.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@student.errors.count, "error") %> prohibited
+      this student from being saved:</h2>
+    <ul>
+    <% @student.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+  <% end %>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+<p>
+    <%= f.label :rollNo %><br>
+    <%= f.text_field :rollNo %>
+  </p>
+  <p>
+    <%= f.label :gender %><br>
+    <%= f.select(:gender, options_for_select([['Male', 'male'], ['Female', 'female']])) %>
+  </p>
+  <p>
+    <%= f.label :category %><br>
+    <%= f.text_field :category %>
+  </p>
+  <p>
+    <%= f.label :branch %><br>
+    <%= f.select(:branch, options_for_select([['COE', 'coe'], ['ECE', 'ece'], ['ICE', 'ice'],['IT', 'it'],['MPAE', 'mpae'],['BT', 'bt'],['IS', 'is'],['SP', 'sp'],['PC', 'pc']])) %>
+  </p>
+  <p>
+    <%= f.label :dob %><br>
+    <%= f.date_select( :dob, :start_year=>1980, :prompt => { :day => 'Select date', :month => 'Select month', :year => 'Select year' }) %>
+  </p>
+  <p>
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :contactNo %><br>
+    <%= f.text_field :contactNo %>
+  </p>
+  <p>
+    <%= f.label :altContactNo %><br>
+    <%= f.text_field :altContactNo %>
+  </p>
+  <p>
+    <%= f.label :bePercent %><br>
+    <%= f.text_field :bePercent %>
+  </p>
+  <p>
+    <%= f.label :bePercentDrop %><br>
+    <%= f.text_field :bePercentDrop %>
+  </p>
+  <p>
+    <%= f.label :sem1Percent %><br>
+    <%= f.text_field :sem1Percent %>
+  </p>
+  <p>
+    <%= f.label :sem2Percent %><br>
+    <%= f.text_field :sem2Percent %>
+  </p>
+ 
+  <p>
+    <%= f.label :sem3Percent %><br>
+    <%= f.text_field :sem3Percent %>
+  </p>
+  <p>
+    <%= f.label :sem4Percent %><br>
+    <%= f.text_field :sem4Percent %>
+  </p>
+  <p>
+    <%= f.label :sem5Percent %><br>
+    <%= f.text_field :sem5Percent %>
+  </p>
+  <p>
+    <%= f.label :sem6Percent %><br>
+    <%= f.text_field :sem6Percent %>
+  </p>
+  <p>
+    <%= f.label :xPercent %><br>
+    <%= f.text_field :xPercent %>
+  </p>
+  <p>
+    <%= f.label :xYear %><br>
+    <%= f.text_field :xYear %>
+  </p>
+  <p>
+    <%= f.label :xiiPercent %><br>
+    <%= f.text_field :xiiPercent %>
+  </p>
+
+  <p>
+    <%= f.label :xiiYear %><br>
+    <%= f.text_field :xiiYear %>
+  </p>
+  <p>
+    <%= f.label :xBoard %><br>
+    <%= f.text_field :xBoard %>
+  </p>
+  <p>
+    <%= f.label :xiiBoard %><br>
+    <%= f.text_field :xiiBoard %>
+  </p>
+ <p>
+    <%= f.label :fathersName %><br>
+    <%= f.text_field :fathersName %>
+  </p>
+  <p>
+    <%= f.label :fathersOccupation %><br>
+    <%= f.text_field :fathersOccupation %>
+  </p>
+  <p>
+    <%= f.label :fathersContact %><br>
+    <%= f.text_field :fathersContact %>
+  </p>
+  <p>
+    <%= f.label :mothersName %><br>
+    <%= f.text_field :mothersName %>
+  </p>
+  <p>
+    <%= f.label :mothersOccupation %><br>
+    <%= f.text_field :mothersOccupation %>
+  </p>
+  <p>
+    <%= f.label :mothersContact %><br>
+    <%= f.text_field :mothersContact %>
+  </p>
+  <p>
+    <%= f.label :backs %><br>
+    <%= f.text_field :backs %>
+  </p>
+  <p>
+    <%= f.label :currentAddress %><br>
+    <%= f.text_field :currentAddress %>
+  </p>
+<p>
+    <%= f.label :permanentAddress %><br>
+    <%= f.text_field :permanentAddress %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

@@ -1,0 +1,147 @@
+<h1> Student Details </h1>
+
+<p>
+  <strong>Name:</strong>
+  <%= @student.name %>
+</p>
+ <p>
+  <strong>Roll No.:</strong>
+  <%= @student.rollNo %>
+</p>
+<p>
+  <strong>Branch:</strong>
+  <%= @student.branch %>
+</p>
+<p>
+  <strong>Gender:</strong>
+  <%= @student.gender %>
+</p>
+<p>
+  <strong>Category:</strong>
+  <%= @student.category %>
+</p>
+<p>
+  <strong>DOB:</strong>
+  <%= @student.dob %>
+</p>
+<p>
+  <strong>Email:</strong>
+  <%= @student.email %>
+</p>
+<p>
+  <strong>Contact No:</strong>
+  <%= @student.contactNo %>
+</p>
+<p>
+  <strong>Alternative Contact No.:</strong>
+  <%= @student.altContactNo %>
+</p>
+
+<p>
+  <strong>BE Percent without Drop:</strong>
+  <%= @student.bePercent %>
+</p>
+<p>
+  <strong>BE Percent with Drop:</strong>
+  <%= @student.bePercentDrop %>
+</p>
+<p>
+  <strong>First Sem Percent:</strong>
+  <%= @student.sem1Percent %>
+</p>
+<p>
+  <strong>Second Sem Percet:</strong>
+  <%= @student.sem2Percent %>
+</p>
+
+<p>
+  <strong>Third Sem Percent:</strong>
+  <%= @student.sem3Percent %>
+</p>
+<p>
+  <strong>Fourth Sem Percent:</strong>
+  <%= @student.sem4Percent %>
+</p>
+<p>
+  <strong>Fifth Sem Percent:</strong>
+  <%= @student.sem5Percent %>
+</p>
+<p>
+  <strong>Sixth Sem Percent:</strong>
+  <%= @student.sem6Percent %>
+</p>
+<p>
+  <strong>Tenth Class Percent:</strong>
+  <%= @student.xPercent %>
+</p>
+<p>
+  <strong>Tenth Class Year:</strong>
+  <%= @student.xYear %>
+</p>
+<p>
+  <strong>Twelth Class Percent:</strong>
+  <%= @student.xiiPercent %>
+</p>
+
+<p>
+  <strong>Twelth Class Year:</strong>
+  <%= @student.xiiYear %>
+</p>
+<p>
+  <strong>Class Tenth Board:</strong>
+  <%= @student.xBoard %>
+</p>
+
+<p>
+  <strong>Class Twelth Board</strong>
+  <%= @student.xiiBoard %>
+</p>
+<p>
+  <strong>Father's Name</strong>
+  <%= @student.fathersName %>
+</p>
+<p>
+  <strong>Father's Occupation</strong>
+  <%= @student.fathersOccupation %>
+</p>
+<p>
+  <strong>Father's Contact</strong>
+  <%= @student.fathersContact %>
+</p>
+<p>
+  <strong>Mother's Name</strong>
+  <%= @student.mothersName %>
+</p>
+<p>
+  <strong>Mother's Occupation</strong>
+  <%= @student.mothersOccupation %>
+</p>
+<p>
+  <strong>Mother's Contact</strong>
+  <%= @student.mothersContact %>
+</p>
+<p>
+  <strong>Backs</strong>
+  <%= @student.backs %>
+</p>
+<p>
+  <strong>Current Address</strong>
+  <%= @student.currentAddress %>
+</p>
+<p>
+  <strong>Permanent Address</strong>
+  <%= @student.permanentAddress %>
+</p>
+<p>
+  <strong>Created At</strong>
+  <%= @student.created_at %>
+</p>
+
+<p>
+  <strong>Updated At</strong>
+  <%= @student.updated_at %>
+</p>
+
+
+
+<%= link_to 'Back', students_path %> | <%= link_to 'Edit', edit_student_path(@student) %>
